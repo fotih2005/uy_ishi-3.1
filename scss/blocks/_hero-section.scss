@@ -1,0 +1,36 @@
+.hero-section__item {
+    &:not(:last-child){
+        margin-right: 20px;
+    }
+    width: 460px;
+    background-image: url(../../img/IMAGE.png);
+}
+.hero-section__item-content {
+    padding-top: 150px;
+    padding-bottom: 15px;
+}
+.hero-section__second-item{
+    background-image: url(../../img/hero-bg.png);
+}
+.hero-section__link{
+    top: 20px;
+}
+.hero-section__item:hover .hero-section__link{
+    display: block !important;
+}
+@include breakpoint-down(800px){
+    .hero-section__cards{
+        display: block !important;
+        justify-content: center !important;
+    }
+    .hero-section__item{
+        &:not(:last-child){
+            margin-right: 0;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        display: block !important;
+        margin-right: 0;
+        margin: 0 auto;
+    }
+}
